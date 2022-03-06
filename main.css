@@ -46,7 +46,7 @@ a {
     font-size: 30px;
 }
 
-.official {
+.footer, .official {
     text-align: right;
     width: auto;
     clear: both;
