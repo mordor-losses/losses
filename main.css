@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+}
+
+a {
+    color: blue;
+}
+
+.help_zsu {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.2em;
+    line-height: 20px;
+    background: gold;
+    text-align: center;
+    width: 100%;
+}
+
+.charts {
+    width: 100%;
+}
+
+.canvasChartWrapper {
+    height: 50vh;
+    margin-bottom: 30px;
+    width: 49vw;
+    float:left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.canvasChart {
+    top: 200px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.languages {
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+
+.languages>span {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.official {
+    text-align: right;
+    width: auto;
+    clear: both;
+    margin: 20px;
+}
