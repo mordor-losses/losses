@@ -4,95 +4,37 @@
     function initEvents() {
         jQuery('#languages').on('click', function(e) {
             const language = jQuery(e.target).attr('id').replace('_language', '');
-            changeLanguage(language);
-            updateCharts();
+            const languageData = getLanguageData(language)
+
+            changeLanguageData(languageData.main)
+            updateCharts(languageData.charts);
+        })
+    }
+
+    function changeLanguageData(languageData) {
+        Object.keys(languageData).forEach(function(languageKey) {
+            const element = document.getElementById(languageKey);
+            if (element) {
+                element.innerHTML = languageData[languageKey];
+            }
         })
     }
 
     function init() {
         initEvents();
-        changeLanguage();
-        renderChart();
+        renderChart(getLanguageData().charts);
     }
 
-    function changeLanguage(language = 'ua') {
-        switch (language) {
-            case 'ua':
-                languageData = {
-                    'title': {
-                        'earth': 'Втрати на землі',
-                        'earthOther': 'Втрати на землі (інше)',
-                        'sky': 'Втрати в небі',
-                        'personal': 'Втрати особового складу',
-                    },
-                    'tanks': 'Танки',
-                    'bbms': 'Бойові броньовані машини',
-                    'autos': 'Авто',
-                    'airplanes': 'Літаки',
-                    'helicopters': 'Гелікоптери',
-                    'ppos': 'ППО',
-                    'bpla': 'БПЛА',
-                    'gradAndBucks': 'Град + БУК',
-                    'artillery': 'Гармати',
-                    'tankers': 'Цистерни з ППМ',
-                    'personal': 'Солдати'
-                }
-                break;
-            case 'ru':
-                languageData = {
-                    'title': {
-                        'earth': 'Потери на земле',
-                        'earthOther': 'Потери на земле (другме)',
-                        'sky': 'Потери в небе',
-                        'personal': 'Потери личного состава',
-                    },
-                    'tanks': 'Танки',
-                    'bbms': 'Боевые бронированные машины',
-                    'autos': 'Авто',
-                    'airplanes': 'Самолеты',
-                    'helicopters': 'Вертолеты',
-                    'ppos': 'ПВО',
-                    'bpla': 'БПЛА',
-                    'gradAndBucks': 'Град + БУК',
-                    'artillery': 'Пушки',
-                    'tankers': 'Цистерны с ГСМ',
-                    'personal': 'Солдаты'
-                }
-                break;
-            case 'en':
-                languageData = {
-                    'title': {
-                        'earth': 'Military equipment losses on land',
-                        'earthOther': 'Military equipment losses (additionally)',
-                        'sky': 'Military equipment losses in air battles',
-                        'personal': 'Military staff losses',
-                    },
-                    'tanks': 'Tanks',
-                    'bbms': 'Armored vehicles ',
-                    'autos': 'Automotive equipment',
-                    'airplanes': 'Planes',
-                    'helicopters': 'Helicopters',
-                    'ppos': 'AAW (air defense)',
-                    'bpla': 'Unmanned aerial vehicle (drone)',
-                    'gradAndBucks': 'BM-21 Grad + BUK',
-                    'artillery': 'Field artillery guns',
-                    'tankers': 'Cisterns with oil',
-                    'personal': 'Soldiers/army staff'
-                }
-                break;
-        }
-    }
-
-    function updateCharts() {
+    function updateCharts(languageData) {
         window.earthChart.destroy();
         window.earthChartOther.destroy();
         window.skyChart.destroy();
         window.personalChart.destroy();
 
-        renderChart();
+        renderChart(languageData);
     }
 
-    function renderChart() {
+    function renderChart(languageData) {
         const earthChart = document.getElementById('chartMordorLossesEarth');
         const earthOtherChart = document.getElementById('chartMordorLossesEarthOther');
         const skyChart = document.getElementById('chartMordorLossesSky');
