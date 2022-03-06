@@ -27,7 +27,8 @@ function getLanguageData(language = 'ua') {
                     'help_zsu': 'УВАГА! Допомогти Збройним Силам України можна, здійснивши переказ з платіжної картки за цим',
                     'help_zsu_url': 'посиланням',
                     'suggestions': 'Зауваження, скарги пишіть на',
-                    'official_data': 'Дані по особовому складу приблизні, інформацію взято з офіційної сторінки'
+                    'official_data': 'Дані по особовому складу приблизні, інформацію взято з офіційної сторінки',
+                    'title': 'Втрати окупантів в Україні'
                 }
             }
             break;
@@ -56,7 +57,8 @@ function getLanguageData(language = 'ua') {
                     'help_zsu': 'ВНИМАНИЕ! Помочь Вооруженным Силам Украины можно, совершив перевод с платежной карты ',
                     'help_zsu_url': 'здесь',
                     'suggestions': 'Замечания, жалобы пишите на',
-                    'official_data': 'Данные по личному составу приблизительны, информация взята с официальной страницы'
+                    'official_data': 'Данные по личному составу приблизительны, информация взята с официальной страницы',
+                    'title': 'Потери оккупантов в Украине'
                 }
             }
             break;
@@ -85,7 +87,8 @@ function getLanguageData(language = 'ua') {
                     'help_zsu': 'You can donate to Ukrainian Army using this link',
                     'help_zsu_url': 'here',
                     'suggestions': 'Let us know if you have any suggestions for improvement ',
-                    'official_data': 'The military staff losses data is approximate, information was taken from '
+                    'official_data': 'The military staff losses data is approximate, information was taken from ',
+                    'title': 'Losses of the invaders in Ukraine'
                 }
             }
             break;
