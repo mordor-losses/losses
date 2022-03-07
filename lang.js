@@ -17,8 +17,8 @@ function getLanguageData(language = 'ua') {
                     'airplanes': 'Літаки',
                     'helicopters': 'Гелікоптери',
                     'ppos': 'ППО',
-                    'bpla': 'БПЛА',
-                    'gradAndBucks': 'Град + БУК',
+                    'bpla': 'Безпілотні літальні апарати',
+                    'gradAndBucks': 'Реактивні системи залпового вогню',
                     'artillery': 'Гармати',
                     'tankers': 'Цистерни з ППМ',
                     'personal': 'Солдати'
@@ -47,8 +47,8 @@ function getLanguageData(language = 'ua') {
                     'airplanes': 'Самолеты',
                     'helicopters': 'Вертолеты',
                     'ppos': 'ПВО',
-                    'bpla': 'БПЛА',
-                    'gradAndBucks': 'Град + БУК',
+                    'bpla': 'Беспилотные летательные аппараты',
+                    'gradAndBucks': 'Реактивные системы залпового огня',
                     'artillery': 'Пушки',
                     'tankers': 'Цистерны с ГСМ',
                     'personal': 'Солдаты'
@@ -78,7 +78,7 @@ function getLanguageData(language = 'ua') {
                     'helicopters': 'Helicopters',
                     'ppos': 'AAW (air defense)',
                     'bpla': 'Unmanned aerial vehicle (drone)',
-                    'gradAndBucks': 'BM-21 Grad + BUK',
+                    'gradAndBucks': 'Multiple launch rocket system',
                     'artillery': 'Field artillery guns',
                     'tankers': 'Cisterns with oil',
                     'personal': 'Soldiers/army staff'
