@@ -1,7 +1,7 @@
 (function() {
     function initEvents() {
-        jQuery('#languages').on('click', function(e) {
-            const language = jQuery(e.target).attr('id').replace('_language', '');
+        document.getElementById('languages').addEventListener('click', function(event){
+            const language = event.target.id.replace('_language', '');
             const languageData = getLanguageData(language)
 
             changeLanguageData(languageData.main)
