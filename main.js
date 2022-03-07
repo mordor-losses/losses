@@ -132,6 +132,14 @@
             backgroundColor: '#bdcf32'
         }
 
+        const boats = {
+            type: 'line',
+            label: languageData.boats,
+            data: [0, 0, 0, 2, 2, 2, 2, 2, 2, 2 ,2, 3],
+            borderColor: '#0ea4D4',
+            backgroundColor: '#0ea4D4'
+        }
+
         const personal = {
             type: 'line',
             label: languageData.personal,
@@ -142,7 +150,7 @@
 
         const earthLosses = [tanks, bbms, autos];
         const skyLosses = [airplanes, helicopters, bpla];
-        const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers];
+        const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers, boats];
         const personalLosses = [personal];
 
         // earthChart

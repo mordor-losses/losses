@@ -21,6 +21,7 @@ function getLanguageData(language = 'ua') {
                     'gradAndBucks': 'Реактивні системи залпового вогню',
                     'artillery': 'Гармати',
                     'tankers': 'Цистерни з ППМ',
+                    'boats': 'Кораблі (катери)',
                     'personal': 'Солдати'
                 },
                 main: {
@@ -51,6 +52,7 @@ function getLanguageData(language = 'ua') {
                     'gradAndBucks': 'Реактивные системы залпового огня',
                     'artillery': 'Пушки',
                     'tankers': 'Цистерны с ГСМ',
+                    'boats': 'Корабли (катера)',
                     'personal': 'Солдаты'
                 },
                 main: {
@@ -81,6 +83,7 @@ function getLanguageData(language = 'ua') {
                     'gradAndBucks': 'Multiple launch rocket system',
                     'artillery': 'Field artillery guns',
                     'tankers': 'Cisterns with oil',
+                    'boats': 'Ships (boats)',
                     'personal': 'Soldiers/army staff'
                 },
                 main: {
