@@ -51,13 +51,14 @@
             '06.03',
             '07.03',
             '08.03',
-            '09.03'
+            '09.03',
+            '10.03'
         ];
 
         const tanks = {
             type: 'line',
             label: languageData.tanks,
-            data: [30, 80, 100, 150, 191, 198, 211, 217, 251, 269, 285, 290, 303, 317],
+            data: [30, 80, 100, 150, 191, 198, 211, 217, 251, 269, 285, 290, 303, 317, 335],
             borderColor: '#003f5c',
             backgroundColor: '#003f5c'
         }
@@ -65,7 +66,7 @@
         const bbms = {
             type: 'line',
             label: languageData.bbms,
-            data: [130, 516, 540, 706, 816, 846, 862, 900, 939,945, 985, 999, 1036, 1070],
+            data: [130, 516, 540, 706, 816, 846, 862, 900, 939,945, 985, 999, 1036, 1070, 1105],
             borderColor: '#ffa600',
             backgroundColor: '#ffa600'
         }
@@ -73,7 +74,7 @@
         const autos = {
             type: 'line',
             label: languageData.autos,
-            data: [0,0,0,0, 291, 305, 355, 374, 404, 409, 447, 454, 474, 482],
+            data: [0,0,0,0, 291, 305, 355, 374, 404, 409, 447, 454, 474, 482, 526],
             borderColor: '#bc5090',
             backgroundColor: '#bc5090',
         }
@@ -81,7 +82,7 @@
         const airplanes = {
             type: 'line',
             label: languageData.airplanes,
-            data: [7, 10, 16, 27, 29, 29, 30, 30, 37, 39, 44, 46, 48, 49],
+            data: [7, 10, 16, 27, 29, 29, 30, 30, 37, 39, 44, 46, 48, 49, 49],
             borderColor: '#aecdc2',
             backgroundColor: '#aecdc2'
         }
@@ -89,7 +90,7 @@
         const helicopters = {
             type: 'line',
             label: languageData.helicopters,
-            data: [6, 7, 18, 26, 29, 29, 31, 31, 37, 40, 48, 68, 80, 81],
+            data: [6, 7, 18, 26, 29, 29, 31, 31, 37, 40, 48, 68, 80, 81, 81],
             borderColor: '#f0b8b8',
             backgroundColor: '#f0b8b8'
         }
@@ -97,7 +98,7 @@
         const bpla = {
             type: 'line',
             label: languageData.bpla,
-            data: [0,0,0,2, 3, 3, 3, 3, 3,3, 4, 7, 7, 7],
+            data: [0,0,0,2, 3, 3, 3, 3, 3,3, 4, 7, 7, 7, 7],
             borderColor: '#ada600',
             backgroundColor: '#ada600'
         }
@@ -105,7 +106,7 @@
         const ppos = {
             type: 'line',
             label: languageData.ppos,
-            data: [0, 0, 0, 0, 0, 7, 9, 11, 18, 19, 21, 23, 27, 28],
+            data: [0, 0, 0, 0, 0, 7, 9, 11, 18, 19, 21, 23, 27, 28, 29],
             borderColor: '#ea5545',
             backgroundColor: '#ea5545'
         }
@@ -113,7 +114,7 @@
         const gradAndBucks = {
             type: 'line',
             label: languageData.gradAndBucks,
-            data: [0, 0, 0, 5, 22, 25, 40, 42, 50, 50, 50, 50, 56, 56],
+            data: [0, 0, 0, 5, 22, 25, 40, 42, 50, 50, 50, 50, 56, 56, 56],
             borderColor: '#f46a9b',
             backgroundColor: '#f46a9b'
         }
@@ -121,7 +122,7 @@
         const artillery = {
             type: 'line',
             label: languageData.artillery,
-            data: [0, 0, 0, 50, 74, 77, 85, 90, 105, 105, 109, 117, 120, 120],
+            data: [0, 0, 0, 50, 74, 77, 85, 90, 105, 105, 109, 117, 120, 120, 123],
             borderColor: '#ef9b20',
             backgroundColor: '#ef9b20'
         }
@@ -129,7 +130,7 @@
         const tankers = {
             type: 'line',
             label: languageData.tankers,
-            data: [0, 0, 0, 0, 0, 0, 60, 60, 60, 60, 60, 60, 60, 60],
+            data: [0, 0, 0, 0, 0, 0, 60, 60, 60, 60, 60, 60, 60, 60, 60],
             borderColor: '#bdcf32',
             backgroundColor: '#bdcf32'
         }
@@ -137,7 +138,7 @@
         const boats = {
             type: 'line',
             label: languageData.boats,
-            data: [0, 0, 0, 2, 2, 2, 2, 2, 2, 2 ,2, 3, 3, 3],
+            data: [0, 0, 0, 2, 2, 2, 2, 2, 2, 2 ,2, 3, 3, 3, 3],
             borderColor: '#0ea4D4',
             backgroundColor: '#0ea4D4'
         }
@@ -145,7 +146,7 @@
         const personal = {
             type: 'line',
             label: languageData.personal,
-            data: [800, 2800, 3000, 4500, 5300, 5710, 5840, 9000, 9166, 10000, 11000, 11250, 11800, 12200],
+            data: [800, 2800, 3000, 4500, 5300, 5710, 5840, 9000, 9166, 10000, 11000, 11250, 11800, 12200, 12350],
             borderColor: '#ef9b20',
             backgroundColor: '#ef9b20'
         }
