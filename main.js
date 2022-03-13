@@ -20,7 +20,7 @@
 
     function init() {
         initEvents();
-        renderChart(getLanguageData().charts);
+        renderCharts(getLanguageData().charts);
     }
 
     function updateCharts(languageData) {
@@ -29,7 +29,7 @@
         window.skyChart.destroy();
         window.personalChart.destroy();
 
-        renderChart(languageData);
+        renderCharts(languageData);
     }
 
 
@@ -53,17 +53,37 @@
         return labels;
     }
 
-    function renderChart(languageData) {
-        const earthChart = document.getElementById('chartMordorLossesEarth');
-        const earthOtherChart = document.getElementById('chartMordorLossesEarthOther');
-        const skyChart = document.getElementById('chartMordorLossesSky');
-
+    function renderChart(idElement, datasets, chartTitle) {
         const labels = getDateLabels();
+
+        return new Chart(idElement, {
+            data: {
+                datasets: datasets,
+                labels: labels
+            },
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: chartTitle,
+                        font: {
+                            size: '16',
+                            weight: 'bold'
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function renderCharts(languageData) {
+        const data = getData();
 
         const tanks = {
             type: 'line',
             label: languageData.tanks,
-            data: [30, 80, 100, 150, 191, 198, 211, 217, 251, 269, 285, 290, 303, 317, 335, 353, 362, 374],
+            data: data.tanks,
             borderColor: '#003f5c',
             backgroundColor: '#003f5c'
         }
@@ -71,7 +91,7 @@
         const bbms = {
             type: 'line',
             label: languageData.bbms,
-            data: [130, 516, 540, 706, 816, 846, 862, 900, 939,945, 985, 999, 1036, 1070, 1105, 1165, 1205, 1226],
+            data: data.bbms,
             borderColor: '#ffa600',
             backgroundColor: '#ffa600'
         }
@@ -79,7 +99,7 @@
         const autos = {
             type: 'line',
             label: languageData.autos,
-            data: [0,0,0,0, 291, 305, 355, 374, 404, 409, 447, 454, 474, 482, 526, 558, 585, 600],
+            data: data.autos,
             borderColor: '#bc5090',
             backgroundColor: '#bc5090',
         }
@@ -87,7 +107,7 @@
         const airplanes = {
             type: 'line',
             label: languageData.airplanes,
-            data: [7, 10, 16, 27, 29, 29, 30, 30, 37, 39, 44, 46, 48, 49, 49, 57, 58, 74],
+            data: data.airplanes,
             borderColor: '#aecdc2',
             backgroundColor: '#aecdc2'
         }
@@ -95,7 +115,7 @@
         const helicopters = {
             type: 'line',
             label: languageData.helicopters,
-            data: [6, 7, 18, 26, 29, 29, 31, 31, 37, 40, 48, 68, 80, 81, 81, 83, 83, 86],
+            data: data.helicopters,
             borderColor: '#f0b8b8',
             backgroundColor: '#f0b8b8'
         }
@@ -103,7 +123,7 @@
         const bpla = {
             type: 'line',
             label: languageData.bpla,
-            data: [0,0,0,2, 3, 3, 3, 3, 3,3, 4, 7, 7, 7, 7, 7, 7, 7],
+            data: data.bpla,
             borderColor: '#ada600',
             backgroundColor: '#ada600'
         }
@@ -111,7 +131,7 @@
         const ppos = {
             type: 'line',
             label: languageData.ppos,
-            data: [0, 0, 0, 0, 0, 7, 9, 11, 18, 19, 21, 23, 27, 28, 29, 31, 33, 34],
+            data: data.ppos,
             borderColor: '#ea5545',
             backgroundColor: '#ea5545'
         }
@@ -119,7 +139,7 @@
         const gradAndBucks = {
             type: 'line',
             label: languageData.gradAndBucks,
-            data: [0, 0, 0, 5, 22, 25, 40, 42, 50, 50, 50, 50, 56, 56, 56, 58, 62, 62],
+            data: data.gradAndBucks,
             borderColor: '#f46a9b',
             backgroundColor: '#f46a9b'
         }
@@ -127,7 +147,7 @@
         const artillery = {
             type: 'line',
             label: languageData.artillery,
-            data: [0, 0, 0, 50, 74, 77, 85, 90, 105, 105, 109, 117, 120, 120, 123, 125, 135, 140],
+            data: data.artillery,
             borderColor: '#ef9b20',
             backgroundColor: '#ef9b20'
         }
@@ -135,7 +155,7 @@
         const tankers = {
             type: 'line',
             label: languageData.tankers,
-            data: [0, 0, 0, 0, 0, 0, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60],
+            data: data.tankers,
             borderColor: '#bdcf32',
             backgroundColor: '#bdcf32'
         }
@@ -143,7 +163,7 @@
         const boats = {
             type: 'line',
             label: languageData.boats,
-            data: [0, 0, 0, 2, 2, 2, 2, 2, 2, 2 ,2, 3, 3, 3, 3, 3, 3, 3],
+            data: data.boats,
             borderColor: '#0ea4D4',
             backgroundColor: '#0ea4D4'
         }
@@ -151,7 +171,7 @@
         const personal = {
             type: 'line',
             label: languageData.personal,
-            data: [800, 2800, 3000, 4500, 5300, 5710, 5840, 9000, 9166, 10000, 11000, 11250, 11800, 12200, 12350, 12490, 12550, 12600],
+            data: data.personal,
             borderColor: '#ef9b20',
             backgroundColor: '#ef9b20'
         }
@@ -161,89 +181,10 @@
         const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers, boats];
         const personalLosses = [personal];
 
-        // earthChart
-        window.earthChart = new Chart(earthChart, {
-            data: {
-                datasets: earthLosses,
-                labels: labels
-            },
-            options: {
-                maintainAspectRatio: false,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: languageData.title.earth,
-                        font: {
-                            size: '16',
-                            weight: 'bold'
-                        }
-                    }
-                }
-            }
-        });
-
-        // skyChart
-        window.skyChart =new Chart(skyChart, {
-            data: {
-                datasets: skyLosses,
-                labels: labels
-            },
-            options: {
-                maintainAspectRatio: false,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: languageData.title.sky,
-                        font: {
-                            size: '16',
-                            weight: 'bold'
-                        }
-                    }
-                }
-            }
-        });
-
-        // earthChartOther
-        window.earthChartOther =new Chart(earthOtherChart, {
-            data: {
-                datasets: earthOtherLosses,
-                labels: labels
-            },
-            options: {
-                maintainAspectRatio: false,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: languageData.title.earthOther,
-                        font: {
-                            size: '16',
-                            weight: 'bold'
-                        }
-                    }
-                }
-            }
-        });
-
-        // personal
-        window.personalChart =new Chart(chartMordorLossesPersonal, {
-            data: {
-                datasets: personalLosses,
-                labels: labels
-            },
-            options: {
-                maintainAspectRatio: false,
-                plugins: {
-                    title: {
-                        display: true,
-                        text: languageData.title.personal,
-                        font: {
-                            size: '16',
-                            weight: 'bold'
-                        }
-                    }
-                }
-            }
-        });
+        window.earthChart = renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth);
+        window.skyChart = renderChart('chartMordorLossesSky', skyLosses, languageData.title.sky);
+        window.earthChartOther = renderChart('chartMordorLossesEarthOther', earthOtherLosses, languageData.title.earthOther);
+        window.personalChart = renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal);
 
     }
 
