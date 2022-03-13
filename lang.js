@@ -29,7 +29,8 @@ function getLanguageData(language = 'ua') {
                     'help_zsu_url': 'посиланням',
                     'suggestions': 'Зауваження, скарги пишіть на',
                     'official_data': 'Дані по особовому складу приблизні, інформацію взято з офіційної сторінки',
-                    'title': 'Втрати окупантів в Україні'
+                    'title': 'Втрати окупантів в Україні',
+                    'zsu_url': 'Сухопутні війська ЗС України'
                 }
             }
             break;
@@ -60,7 +61,8 @@ function getLanguageData(language = 'ua') {
                     'help_zsu_url': 'здесь',
                     'suggestions': 'Замечания, жалобы пишите на',
                     'official_data': 'Данные по личному составу приблизительны, информация взята с официальной страницы',
-                    'title': 'Потери оккупантов в Украине'
+                    'title': 'Потери оккупантов в Украине',
+                    'zsu_url': 'Сухопутные войска ВС Украины'
                 }
             }
             break;
@@ -91,7 +93,40 @@ function getLanguageData(language = 'ua') {
                     'help_zsu_url': 'here',
                     'suggestions': 'Let us know if you have any suggestions for improvement ',
                     'official_data': 'The military staff losses data is approximate, information was taken from ',
-                    'title': 'Losses of the invaders in Ukraine'
+                    'title': 'Losses of the invaders in Ukraine',
+                    'zsu_url': 'Land forces of the Armed Forces of Ukraine'
+                }
+            }
+            break;
+        case 'de':
+            languageData = {
+                charts: {
+                    'title': {
+                        'earth': 'Verluste an militärischer Ausrüstung an Land',
+                        'earthOther': 'Militärische Ausrüstungsverluste (zusätzlich)',
+                        'sky': 'Verluste an militärischer Ausrüstung in Luftkämpfen',
+                        'personal': 'Verluste des Militärpersonals (ungefähr)',
+                    },
+                    'tanks': 'Panzer',
+                    'bbms': 'Gepanzerte Fahrzeuge',
+                    'autos': 'Kfz-Ausrüstung',
+                    'airplanes': 'Flugzeuge',
+                    'helicopters': 'Helikopter',
+                    'ppos': 'Luftverteidigung',
+                    'bpla': 'Unbemanntes Luftfahrzeug (Drohne)',
+                    'gradAndBucks': 'Mehrfachstartraketensystem',
+                    'artillery': 'Feldartilleriegeschütze',
+                    'tankers': 'Zisternen mit Öl',
+                    'boats': 'Schiffe (Boote)',
+                    'personal': 'Soldaten/Armeepersonal'
+                },
+                main: {
+                    'help_zsu': 'Über diesen Link können Sie an die ukrainische Armee spenden',
+                    'help_zsu_url': 'hier',
+                    'suggestions': 'Lassen Sie uns wissen, wenn Sie Verbesserungsvorschläge haben ',
+                    'official_data': 'Die Daten zu den Verlusten des Militärpersonals sind ungefähre Angaben, die Informationen wurden entnommen',
+                    'title': 'Verluste der Invasoren in der Ukraine',
+                    'zsu_url': 'Landstreitkräfte der Streitkräfte der Ukraine'
                 }
             }
             break;
