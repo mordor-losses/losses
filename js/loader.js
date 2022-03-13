@@ -7,6 +7,7 @@
         const script = document.createElement('script');
         script.type = 'text/javascript';
         script.src = 'js/' + file + '.js?' + timeCache ;
+        script.async = false;
 
         document.head.appendChild(script);
 
