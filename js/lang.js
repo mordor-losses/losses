@@ -1,4 +1,3 @@
-
 function getLanguageData(language = 'ua') {
     let languageData = {};
     switch (language) {
@@ -39,7 +38,7 @@ function getLanguageData(language = 'ua') {
                 charts: {
                     'title': {
                         'earth': 'Потери на земле',
-                        'earthOther': 'Потери на земле (другме)',
+                        'earthOther': 'Потери на земле (другие)',
                         'sky': 'Потери в небе',
                         'personal': 'Потери личного состава (приблизительные',
                     },
@@ -127,6 +126,38 @@ function getLanguageData(language = 'ua') {
                     'official_data': 'Die Daten zu den Verlusten des Militärpersonals sind ungefähre Angaben, die Informationen wurden entnommen',
                     'title': 'Verluste der Invasoren in der Ukraine',
                     'zsu_url': 'Landstreitkräfte der Streitkräfte der Ukraine'
+                }
+            }
+            break;
+        case 'by':
+            languageData = {
+                charts: {
+                    'title': {
+                        'earth': 'Страты на зямлі',
+                        'earthOther': 'Страты на зямлі (іншыя)',
+                        'sky': 'Страты ў небе',
+                        'personal': 'Страты асабовага складу (прыблізныя)',
+                    },
+                    'tanks': 'Танкі',
+                    'bbms': 'Баявыя браняваныя машыны',
+                    'autos': 'Аўта',
+                    'airplanes': 'Самалёты',
+                    'helicopters': 'Верталёты',
+                    'ppos': 'СПА',
+                    'bpla': 'Беспілотныя лятальныя апараты',
+                    'gradAndBucks': 'Рэактыўныя сістэмы залпавага агню',
+                    'artillery': 'Гарматы',
+                    'tankers': 'Цыстэрны з ГЗМ',
+                    'boats': 'Караблі (катэры)',
+                    'personal': 'Салдаты'
+                },
+                main: {
+                    'help_zsu': 'УВАГА! Дапамагчы Узброеным Сілам Украіны можна, здзейсніўшы перавод з аплатнай карты ',
+                    'help_zsu_url': 'тут',
+                    'suggestions': 'Заўвагі, скаргі пішыце на',
+                    'official_data': 'Дадзеныя па асабовым складзе прыблізныя, інфармацыя ўзятая з афіцыйнай старонкі',
+                    'title': 'Страты акупантаў ва Украіне',
+                    'zsu_url': 'Сухапутныя войскі УС Украіны'
                 }
             }
             break;
