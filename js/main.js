@@ -41,7 +41,7 @@
         }
 
         const startDate = new Date('2022-02-24');
-        const endDate = new Date('2022-03-13');
+        const endDate = new Date('2022-03-14');
         let currentDate = startDate;
         const labels = [];
 
