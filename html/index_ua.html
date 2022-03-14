@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Втрати окупантів в Україні</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+    <div class="help">
+        <span id="help_zsu">УВАГА! Допомогти Збройним Силам України можна, здійснивши переказ з платіжної картки за цим</span>
+        <a href="https://bank.gov.ua/ua/about/support-the-armed-forces" target="_blank" id="help_zsu_url">посиланням</a>.
+    </div>
+    <div id="languages" class="languages">
+        <a href="index_ua.html">&#x1f1fa;&#x1f1e6;</a>
+        <a href="index_en.html">&#x1f1fa;&#x1f1f8;</a>
+        <a href="index_ru.html">&#x1f1f7;&#x1f1fa;</a>
+        <a href="index_by.html">&#x1F1E7;&#x1F1FE;</a>
+        <a href="index_de.html">&#x1F1E9;&#x1F1EA;</a>
+    </div>
+
+    <div class="charts">
+        <div class="canvasChartWrapper">
+            <canvas id="chartMordorLossesEarth" class="canvasChart"></canvas>
+        </div>
+        <div class="canvasChartWrapper">
+            <canvas id="chartMordorLossesSky" class="canvasChart"></canvas>
+        </div>
+        <div class="canvasChartWrapper">
+            <canvas id="chartMordorLossesEarthOther" class="canvasChart"></canvas>
+        </div>
+        <div class="canvasChartWrapper">
+            <canvas id="chartMordorLossesPersonal" class="canvasChart"></canvas>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span id="suggestions">Зауваження, скарги пишіть на</span>
+        <a target="_blank" href="mailto:mordor.losses@gmail.com">mordor.losses@gmail.com</a><br />
+        <a target="_blank" href="https://github.com/mordor-losses/losses">Github</a>
+    </div>
+    <div class="official">
+        <span id="official_data">Дані по особовому складу приблизні, інформацію взято з офіційної сторінки</span>
+        <a target="_blank" href="https://www.facebook.com/GeneralStaff.ua" id="zsu_url">Генеральний штаб ЗСУ</a>
+    </div>
+
+    <script src="../js/loader.js"></script>
+</body>
+</html>
