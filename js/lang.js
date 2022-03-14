@@ -18,7 +18,7 @@ function getLanguageData(language = 'ua') {
                     'ppos': 'ППО',
                     'bpla': 'Безпілотні літальні апарати',
                     'gradAndBucks': 'Реактивні системи залпового вогню',
-                    'artillery': 'Гармати',
+                    'artillery': 'Артилерія',
                     'tankers': 'Цистерни з ППМ',
                     'boats': 'Кораблі (катери)',
                     'personal': 'Солдати'
@@ -29,7 +29,7 @@ function getLanguageData(language = 'ua') {
                     'suggestions': 'Зауваження, скарги пишіть на',
                     'official_data': 'Дані по особовому складу приблизні, інформацію взято з офіційної сторінки',
                     'title': 'Втрати окупантів в Україні',
-                    'zsu_url': 'Сухопутні війська ЗС України'
+                    'zsu_url': 'Генеральний штаб ЗСУ'
                 }
             }
             break;
@@ -50,7 +50,7 @@ function getLanguageData(language = 'ua') {
                     'ppos': 'ПВО',
                     'bpla': 'Беспилотные летательные аппараты',
                     'gradAndBucks': 'Реактивные системы залпового огня',
-                    'artillery': 'Пушки',
+                    'artillery': 'Артиллерия',
                     'tankers': 'Цистерны с ГСМ',
                     'boats': 'Корабли (катера)',
                     'personal': 'Солдаты'
@@ -61,7 +61,7 @@ function getLanguageData(language = 'ua') {
                     'suggestions': 'Замечания, жалобы пишите на',
                     'official_data': 'Данные по личному составу приблизительны, информация взята с официальной страницы',
                     'title': 'Потери оккупантов в Украине',
-                    'zsu_url': 'Сухопутные войска ВС Украины'
+                    'zsu_url': 'Генеральный штаб Вооруженных Сил Украины'
                 }
             }
             break;
@@ -82,7 +82,7 @@ function getLanguageData(language = 'ua') {
                     'ppos': 'AAW (air defense)',
                     'bpla': 'Unmanned aerial vehicle (drone)',
                     'gradAndBucks': 'Multiple launch rocket system',
-                    'artillery': 'Field artillery guns',
+                    'artillery': 'Artillery',
                     'tankers': 'Cisterns with oil',
                     'boats': 'Ships (boats)',
                     'personal': 'Soldiers/army staff'
@@ -93,7 +93,7 @@ function getLanguageData(language = 'ua') {
                     'suggestions': 'Let us know if you have any suggestions for improvement ',
                     'official_data': 'The military staff losses data is approximate, information was taken from ',
                     'title': 'Losses of the invaders in Ukraine',
-                    'zsu_url': 'Land forces of the Armed Forces of Ukraine'
+                    'zsu_url': 'General Staff of the Armed Forces of Ukraine'
                 }
             }
             break;
@@ -114,7 +114,7 @@ function getLanguageData(language = 'ua') {
                     'ppos': 'Luftverteidigung',
                     'bpla': 'Unbemanntes Luftfahrzeug (Drohne)',
                     'gradAndBucks': 'Mehrfachstartraketensystem',
-                    'artillery': 'Feldartilleriegeschütze',
+                    'artillery': 'Artillerie',
                     'tankers': 'Zisternen mit Öl',
                     'boats': 'Schiffe (Boote)',
                     'personal': 'Soldaten/Armeepersonal'
@@ -125,7 +125,7 @@ function getLanguageData(language = 'ua') {
                     'suggestions': 'Lassen Sie uns wissen, wenn Sie Verbesserungsvorschläge haben ',
                     'official_data': 'Die Daten zu den Verlusten des Militärpersonals sind ungefähre Angaben, die Informationen wurden entnommen',
                     'title': 'Verluste der Invasoren in der Ukraine',
-                    'zsu_url': 'Landstreitkräfte der Streitkräfte der Ukraine'
+                    'zsu_url': 'Generalstab der Streitkräfte der Ukraine'
                 }
             }
             break;
@@ -146,7 +146,7 @@ function getLanguageData(language = 'ua') {
                     'ppos': 'СПА',
                     'bpla': 'Беспілотныя лятальныя апараты',
                     'gradAndBucks': 'Рэактыўныя сістэмы залпавага агню',
-                    'artillery': 'Гарматы',
+                    'artillery': 'Артылерыя',
                     'tankers': 'Цыстэрны з ГЗМ',
                     'boats': 'Караблі (катэры)',
                     'personal': 'Салдаты'
@@ -157,7 +157,7 @@ function getLanguageData(language = 'ua') {
                     'suggestions': 'Заўвагі, скаргі пішыце на',
                     'official_data': 'Дадзеныя па асабовым складзе прыблізныя, інфармацыя ўзятая з афіцыйнай старонкі',
                     'title': 'Страты акупантаў ва Украіне',
-                    'zsu_url': 'Сухапутныя войскі УС Украіны'
+                    'zsu_url': 'Генеральны штаб Узброеных сіл Украіны'
                 }
             }
             break;
