@@ -1,6 +1,9 @@
 (function() {
+    const languageMatch = window.location.href.match(/index_(.+).html/);
+    const language = !languageMatch ? 'ua' : languageMatch[1];
+
     document.getElementsByName('head')
-    const files = ['lang', 'data', 'main'];
+    const files = ['languages/' + language, 'data', 'main'];
     const date = new Date();
     const timeCache = new Date(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), 0, 0).getTime();
     files.forEach(function(file) {
@@ -10,6 +13,5 @@
         script.async = false;
 
         document.head.appendChild(script);
-
     })
 })();

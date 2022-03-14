@@ -49,9 +49,10 @@ a {
     position: relative;
 }
 
-.languages>span {
+.languages>a {
     cursor: pointer;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .footer, .official {

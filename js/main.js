@@ -1,37 +1,7 @@
 (function() {
-    function initEvents() {
-        document.getElementById('languages').addEventListener('click', function(event){
-            const language = event.target.id.replace('_language', '');
-            const languageData = getLanguageData(language)
-
-            changeLanguageData(languageData.main)
-            updateCharts(languageData.charts);
-        })
-    }
-
-    function changeLanguageData(languageData) {
-        Object.keys(languageData).forEach(function(languageKey) {
-            const element = document.getElementById(languageKey);
-            if (element) {
-                element.innerHTML = languageData[languageKey];
-            }
-        })
-    }
-
     function init() {
-        initEvents();
-        renderCharts(getLanguageData().charts);
+        renderCharts(window.languageData.charts);
     }
-
-    function updateCharts(languageData) {
-        window.earthChart.destroy();
-        window.earthChartOther.destroy();
-        window.skyChart.destroy();
-        window.personalChart.destroy();
-
-        renderCharts(languageData);
-    }
-
 
     function getDateLabels() {
         const formatMonth = function (month) {
