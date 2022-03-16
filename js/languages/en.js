@@ -17,7 +17,8 @@ window.languageData = {
         'artillery': 'Artillery',
         'tankers': 'Cisterns with oil',
         'boats': 'Ships (boats)',
-        'personal': 'Soldiers/army staff'
+        'personal': 'Soldiers/army staff',
+        'special': 'Special machines'
     },
     main: {
         'help_zsu': 'You can donate to Ukrainian Army using this link',

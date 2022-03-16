@@ -138,6 +138,14 @@
             backgroundColor: '#0ea4D4'
         }
 
+        const special = {
+            type: 'line',
+            label: languageData.special,
+            data: data.special,
+            borderColor: '#1AF9DF',
+            backgroundColor: '#1AF9DF'
+        }
+
         const personal = {
             type: 'line',
             label: languageData.personal,
@@ -148,7 +156,7 @@
 
         const earthLosses = [tanks, bbms, autos];
         const skyLosses = [airplanes, helicopters, bpla];
-        const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers, boats];
+        const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers, boats, special];
         const personalLosses = [personal];
 
         window.earthChart = renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth);
