@@ -159,11 +159,10 @@
         const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers, boats, special];
         const personalLosses = [personal];
 
-        window.earthChart = renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth);
-        window.skyChart = renderChart('chartMordorLossesSky', skyLosses, languageData.title.sky);
-        window.earthChartOther = renderChart('chartMordorLossesEarthOther', earthOtherLosses, languageData.title.earthOther);
-        window.personalChart = renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal);
-
+        renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth);
+        renderChart('chartMordorLossesSky', skyLosses, languageData.title.sky);
+        renderChart('chartMordorLossesEarthOther', earthOtherLosses, languageData.title.earthOther);
+        renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal);
     }
 
     init();
