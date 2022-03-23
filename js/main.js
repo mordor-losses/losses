@@ -154,9 +154,9 @@
             backgroundColor: '#ef9b20'
         }
 
-        const earthLosses = [tanks, bbms, autos];
+        const earthLosses = [tanks, bbms, autos, artillery];
         const skyLosses = [airplanes, helicopters, bpla];
-        const earthOtherLosses = [ppos, gradAndBucks, artillery, tankers, boats, special];
+        const earthOtherLosses = [ppos, gradAndBucks, tankers, boats, special];
         const personalLosses = [personal];
 
         renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth);
