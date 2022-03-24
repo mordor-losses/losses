@@ -118,8 +118,8 @@
             type: 'line',
             label: languageData.artillery,
             data: data.artillery,
-            borderColor: '#ef9b20',
-            backgroundColor: '#ef9b20'
+            borderColor: '#aecdc2',
+            backgroundColor: '#aecdc2'
         }
 
         const tankers = {
