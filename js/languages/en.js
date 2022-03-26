@@ -15,7 +15,7 @@ window.languageData = {
         'bpla': 'Unmanned aerial vehicle (drone)',
         'gradAndBucks': 'Multiple launch rocket system',
         'artillery': 'Artillery',
-        'tankers': 'Cisterns with oil',
+        'tankers': 'Fuel tanks',
         'boats': 'Ships (boats)',
         'personal': 'Soldiers/army staff',
         'special': 'Special machines'
