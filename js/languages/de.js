@@ -18,7 +18,8 @@ window.languageData = {
         'tankers': 'Zisternen mit Öl',
         'boats': 'Schiffe (Boote)',
         'personal': 'Soldaten/Armeepersonal',
-        'special': 'Spezielle Maschinen'
+        'special': 'Spezielle Maschinen',
+        'srbm': 'Mobile ballistische Kurzstreckenrakete'
     },
     main: {
         'help_zsu': 'Über diesen Link können Sie an die ukrainische Armee spenden',

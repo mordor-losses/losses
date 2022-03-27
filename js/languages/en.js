@@ -18,7 +18,8 @@ window.languageData = {
         'tankers': 'Fuel tanks',
         'boats': 'Ships (boats)',
         'personal': 'Soldiers/army staff',
-        'special': 'Special machines'
+        'special': 'Special machines',
+        'srbm': 'Mobile SRBM system'
     },
     main: {
         'help_zsu': 'You can donate to Ukrainian Army using this link',
