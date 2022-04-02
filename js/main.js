@@ -3,19 +3,17 @@
         renderCharts(window.languageData.charts);
     }
 
-    function getDateLabels() {
+    function getDateLabels(countDays) {
         const formatMonth = function (month) {
             const formattedMonth = month + 1;
 
             return formattedMonth >= 10 ? formattedMonth : '0' + formattedMonth
         }
 
-        const startDate = new Date('2022-02-24');
-        const endDate = new Date('2022-04-01');
-        let currentDate = startDate;
+        let currentDate = new Date('2022-02-24');
         const labels = [];
 
-        while (currentDate.getTime() <= endDate.getTime()) {
+        for (let i = 0; i < countDays; i++) {
             labels.push(currentDate.getDate() + '.' + formatMonth(currentDate.getMonth()));
             currentDate = new Date(currentDate.getTime() + 86400000)
         }
@@ -24,7 +22,7 @@
     }
 
     function renderChart(idElement, datasets, chartTitle) {
-        const labels = getDateLabels();
+        const labels = getDateLabels(datasets[0].data.length);
 
         return new Chart(idElement, {
             data: {
