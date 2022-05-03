@@ -66,8 +66,8 @@
 
         const autos = {
             type: 'line',
-            label: languageData.autos,
-            data: data.autos,
+            label: languageData.autos_and_tankers,
+            data: data.autos_and_tankers,
             borderColor: '#bc5090',
             backgroundColor: '#bc5090',
         }

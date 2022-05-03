@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Panzer',
         'bbms': 'Gepanzerte Fahrzeuge',
-        'autos': 'Kfz-Ausrüstung und Zisternen mit Öl',
+        'autos_and_tankers': 'Kfz-Ausrüstung und Zisternen mit Öl',
         'airplanes': 'Flugzeuge',
         'helicopters': 'Helikopter',
         'ppos': 'Luftverteidigung',

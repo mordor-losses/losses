@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Танкі',
         'bbms': 'Баявыя браняваныя машыны',
-        'autos': 'Аўта і цыстэрны з ГЗМ',
+        'autos_and_tankers': 'Аўта і цыстэрны з ГЗМ',
         'airplanes': 'Самалёты',
         'helicopters': 'Верталёты',
         'ppos': 'СПА',

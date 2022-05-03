@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Carri armati',
         'bbms': 'Mezzi corazzati',
-        'autos': 'Veicoli leggeri e mezzi di rifornimento',
+        'autos_and_tankers': 'Veicoli leggeri e mezzi di rifornimento',
         'airplanes': 'Aerei',
         'helicopters': 'Elicotteri',
         'ppos': 'Mezzi contraerei',

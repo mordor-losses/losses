@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Tanks',
         'bbms': 'Armored vehicles ',
-        'autos': 'Vehicles & Fuel tanks',
+        'autos_and_tankers': 'Vehicles & Fuel tanks',
         'airplanes': 'Planes',
         'helicopters': 'Helicopters',
         'ppos': 'AAW (air defense)',
