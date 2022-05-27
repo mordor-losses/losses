@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Tanks',
         'bbms': 'Armored vehicles ',
-        'autos_and_tankers': 'Vehicles & Fuel tanks',
+        'autosAndTankers': 'Vehicles & Fuel tanks',
         'airplanes': 'Planes',
         'helicopters': 'Helicopters',
         'ppos': 'AAW (air defense)',
@@ -18,7 +18,8 @@ window.languageData = {
         'boats': 'Ships (boats)',
         'personal': 'Soldiers/army staff',
         'special': 'Special machines',
-        'srbm': 'Mobile SRBM system'
+        'srbm': 'Mobile SRBM system',
+        'cruiseMissiles': 'Сruise missiles'
     },
     main: {
         'help_zsu': 'You can donate to Ukrainian Army using this link',

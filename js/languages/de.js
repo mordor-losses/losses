@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Panzer',
         'bbms': 'Gepanzerte Fahrzeuge',
-        'autos_and_tankers': 'Kfz-Ausrüstung und Zisternen mit Öl',
+        'autosAndTankers': 'Kfz-Ausrüstung und Zisternen mit Öl',
         'airplanes': 'Flugzeuge',
         'helicopters': 'Helikopter',
         'ppos': 'Luftverteidigung',
@@ -18,7 +18,8 @@ window.languageData = {
         'boats': 'Schiffe (Boote)',
         'personal': 'Soldaten/Armeepersonal',
         'special': 'Spezielle Maschinen',
-        'srbm': 'Mobile ballistische Kurzstreckenrakete'
+        'srbm': 'Mobile ballistische Kurzstreckenrakete',
+        'cruiseMissiles': 'Marschflugkörper'
     },
     main: {
         'help_zsu': 'Über diesen Link können Sie an die ukrainische Armee spenden',

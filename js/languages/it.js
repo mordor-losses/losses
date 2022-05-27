@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'Carri armati',
         'bbms': 'Mezzi corazzati',
-        'autos_and_tankers': 'Veicoli leggeri e mezzi di rifornimento',
+        'autosAndTankers': 'Veicoli leggeri e mezzi di rifornimento',
         'airplanes': 'Aerei',
         'helicopters': 'Elicotteri',
         'ppos': 'Mezzi contraerei',
@@ -18,7 +18,8 @@ window.languageData = {
         'boats': 'Imbarcazioni e navi',
         'personal': "Personale dell'esercito",
         'special': 'Mezzi speciali',
-        'srbm': 'Lanciatori di SRBM'
+        'srbm': 'Lanciatori di SRBM',
+        'cruiseMissiles': 'Missili da crociera'
     },
     main: {
         'help_zsu': "Puoi aiutare le Forze armate dell'Ucraina seguendo questo",

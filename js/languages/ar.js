@@ -8,7 +8,7 @@ window.languageData = {
         },
         'tanks': 'الدبابات',
         'bbms': 'المركبات المسلحه ',
-        'autos_and_tankers': '  صهاريج الزيت +المعدات الآليه',
+        'autosAndTankers': '  صهاريج الزيت +المعدات الآليه',
         'airplanes': 'الطائرات',
         'helicopters': 'الهيلوكوبترات',
         'ppos': 'الدفاع الجوي',
@@ -18,7 +18,8 @@ window.languageData = {
         'boats': 'السفن',
         'personal': 'الجنود',
         'special': 'معدات خاصه',
-        'srbm': 'صاروخ باليستي قصير المدى متنقل'
+        'srbm': 'صاروخ باليستي قصير المدى متنقل',
+        'cruiseMissiles': 'صواريخ كروز'
     },
     main: {
         'help_zsu': 'يمكنك التبرع للجيش الاوكراني من هذا الرابط',

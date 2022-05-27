@@ -66,8 +66,8 @@
 
         const autos = {
             type: 'line',
-            label: languageData.autos_and_tankers,
-            data: data.autos_and_tankers,
+            label: languageData.autosAndTankers,
+            data: data.autosAndTankers,
             borderColor: '#bc5090',
             backgroundColor: '#bc5090',
         }
@@ -94,6 +94,14 @@
             data: data.bpla,
             borderColor: '#ada600',
             backgroundColor: '#ada600'
+        }
+
+        const cruiseMissiles = {
+            type: 'line',
+            label: languageData.cruiseMissiles,
+            data: data.cruiseMissiles,
+            borderColor: '#003f5c',
+            backgroundColor: '#003f5c'
         }
 
         const ppos = {
@@ -155,7 +163,7 @@
         }
 
         const earthLosses = [tanks, bbms, autos, artillery];
-        const skyLosses = [airplanes, helicopters, bpla];
+        const skyLosses = [airplanes, helicopters, bpla, cruiseMissiles];
         const earthOtherLosses = [ppos, gradAndBucks, boats, special];
         const personalLosses = [personal];
 
