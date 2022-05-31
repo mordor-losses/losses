@@ -18,7 +18,6 @@ window.languageData = {
         'boats': 'Кораблі (катери)',
         'personal': 'Солдати',
         'special': 'Спеціальна техніка',
-        'srbm': 'Пускові установки ОТРК',
         'cruiseMissiles': 'Крилаті ракети'
     },
     main: {

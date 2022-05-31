@@ -18,7 +18,6 @@ window.languageData = {
         'boats': 'السفن',
         'personal': 'الجنود',
         'special': 'معدات خاصه',
-        'srbm': 'صاروخ باليستي قصير المدى متنقل',
         'cruiseMissiles': 'صواريخ كروز'
     },
     main: {

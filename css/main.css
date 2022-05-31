@@ -2,6 +2,12 @@ body {
     font-family: Arial;
 }
 
+body.disableScroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 a {
     color: blue;
 }
@@ -27,6 +33,18 @@ a {
     float:left;
     margin-top: 20px;
     margin-left: 10px;
+    position: relative;
+}
+
+.canvasChartWrapper.fullScreen {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background-color: #FFF;
+    margin: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -60,4 +78,26 @@ a {
     width: auto;
     clear: both;
     margin: 20px;
+}
+
+.fullScreenIcon {
+    background-image: url("images/expand.png");
+    background-size: 100% 100%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+    bottom: 75px;
+    right: 0;
+
+    position: absolute;
+}
+
+/* Workaround for other loasses chart*/
+.canvasChartWrapper.otherLosses .fullScreenIcon{
+    bottom: 95px;
+}
+
+.canvasChartWrapper.fullScreen .fullScreenIcon {
+    background-image: url("images/collapse.png");
 }

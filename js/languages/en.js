@@ -18,7 +18,6 @@ window.languageData = {
         'boats': 'Ships (boats)',
         'personal': 'Soldiers/army staff',
         'special': 'Special machines',
-        'srbm': 'Mobile SRBM system',
         'cruiseMissiles': 'Сruise missiles'
     },
     main: {

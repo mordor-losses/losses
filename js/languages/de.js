@@ -18,7 +18,6 @@ window.languageData = {
         'boats': 'Schiffe (Boote)',
         'personal': 'Soldaten/Armeepersonal',
         'special': 'Spezielle Maschinen',
-        'srbm': 'Mobile ballistische Kurzstreckenrakete',
         'cruiseMissiles': 'Marschflugkörper'
     },
     main: {

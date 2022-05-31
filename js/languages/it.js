@@ -18,7 +18,6 @@ window.languageData = {
         'boats': 'Imbarcazioni e navi',
         'personal': "Personale dell'esercito",
         'special': 'Mezzi speciali',
-        'srbm': 'Lanciatori di SRBM',
         'cruiseMissiles': 'Missili da crociera'
     },
     main: {

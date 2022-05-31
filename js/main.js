@@ -1,6 +1,16 @@
 (function() {
     function init() {
         renderCharts(window.languageData.charts);
+        renderFullScreenIcons();
+        addEvents();
+    }
+
+    function renderFullScreenIcons() {
+        document.querySelectorAll('.canvasChartWrapper').forEach((canvasChart) => {
+            const fullScreenIcon = document.createElement('div');
+            fullScreenIcon.classList = 'fullScreenIcon'
+            canvasChart.appendChild(fullScreenIcon);
+        })
     }
 
     function getDateLabels(countDays) {
@@ -144,16 +154,6 @@
             backgroundColor: '#1AF9DF'
         }
 
-/*
-        const srbm = {
-            type: 'line',
-            label: languageData.srbm,
-            data: data.srbm,
-            borderColor: '#0E0A0A',
-            backgroundColor: '#0E0A0A'
-        }
-*/
-
         const personal = {
             type: 'line',
             label: languageData.personal,
@@ -171,6 +171,15 @@
         renderChart('chartMordorLossesSky', skyLosses, languageData.title.sky);
         renderChart('chartMordorLossesEarthOther', earthOtherLosses, languageData.title.earthOther);
         renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal);
+    }
+
+    function addEvents() {
+        document.querySelectorAll('.fullScreenIcon').forEach((iconElement) => {
+            iconElement.addEventListener('click', () => {
+                iconElement.parentElement.classList.toggle('fullScreen');
+                document.querySelector('body').classList.toggle('disableScroll');
+            })
+        })
     }
 
     init();
