@@ -101,7 +101,7 @@ a {
 .canvasChartWrapper.fullScreen .fullScreenIcon {
     background-image: url("images/collapse.png");
     bottom: 95px;
-    right: 20px;
+    right: 40px;
 }
 
 .canvasChartWrapper.fullScreen canvas {
