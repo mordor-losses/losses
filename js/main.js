@@ -1,4 +1,6 @@
 (function() {
+    let currentIconElement = null;
+    let fullScreen = false;
     function init() {
         renderCharts(window.languageData.charts);
         renderFullScreenIcons();
@@ -173,13 +175,30 @@
         renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal);
     }
 
+    function toggleFullScreenMode(element) {
+        element.parentElement.classList.toggle('fullScreen');
+        document.querySelector('body').classList.toggle('disableScroll');
+    }
+
     function addEvents() {
         document.querySelectorAll('.fullScreenIcon').forEach((iconElement) => {
             iconElement.addEventListener('click', () => {
-                iconElement.parentElement.classList.toggle('fullScreen');
-                document.querySelector('body').classList.toggle('disableScroll');
+                toggleFullScreenMode(iconElement);
+
+                // Toggle flag full screen
+                fullScreen = !fullScreen;
+                currentIconElement = fullScreen ? iconElement : null;
             })
         })
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key == 'Escape' && fullScreen) {
+                toggleFullScreenMode(currentIconElement);
+
+                currentIconElement = null;
+                fullScreen = false;
+            }
+        });
     }
 
     init();
