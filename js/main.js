@@ -35,7 +35,6 @@
 
     function renderChart(idElement, datasets, chartTitle) {
         const labels = getDateLabels(datasets[0].data.length);
-
         return new Chart(idElement, {
             data: {
                 datasets: datasets,
@@ -50,6 +49,21 @@
                         font: {
                             size: '16',
                             weight: 'bold'
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label + ' ' + context.formattedValue;
+                                const dataIndex = context.dataIndex;
+                                const data = context.dataset.data;
+
+                                if (dataIndex > 0 && data[dataIndex] && data[dataIndex - 1]) {
+                                    label += ' (+' + (data[dataIndex] - data[dataIndex - 1]) + ')';
+                                }
+
+                                return label;
+                            }
                         }
                     }
                 }
