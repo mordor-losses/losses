@@ -107,3 +107,13 @@ a {
 .canvasChartWrapper.fullScreen canvas {
     padding: 20px;
 }
+
+.datepicker {
+    width: 100%;
+    text-align: center;
+}
+
+.datepicker #datepicker {
+    text-align: center;
+    width: 250px;
+}
