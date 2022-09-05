@@ -153,3 +153,19 @@ function getData() {
         ]
     }
 }
+
+function getDataForDays(){
+    let data = getData();
+    dataNew = JSON.parse(JSON.stringify(data));
+    Object.entries(data).forEach(([key, value]) => {
+        data[key].forEach((dataValue, keyValue) => {
+            if (keyValue > 0) {
+                dataNew[key][keyValue] = data[key][keyValue] - data[key][keyValue - 1];
+            } else {
+                dataNew[key][keyValue] = dataValue;
+            }
+        })
+    });
+    console.log(dataNew.tanks);
+    return dataNew;
+}

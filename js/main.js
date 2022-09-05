@@ -107,8 +107,9 @@
         return labels;
     }
 
-    function renderChart(idElement, datasets, chartTitle) {
+    function renderChart(idElement, datasets, chartTitle, customTooltip) {
         const labels = getDateLabels(START_OF_WAR, END_OF_WAR);
+
         return new Chart(idElement, {
             data: {
                 datasets,
@@ -128,6 +129,10 @@
                     tooltip: {
                         callbacks: {
                             label: function(context) {
+                                if (!customTooltip) {
+                                    return context.dataset.label + ' ' + context.formattedValue;
+                                }
+
                                 let label = context.dataset.label + ' ' + context.formattedValue;
                                 const dataIndex = context.dataIndex;
                                 const data = context.dataset.data;
@@ -145,11 +150,9 @@
         });
     }
 
-    function renderCharts(languageData) {
-        const data = getData();
-
+    function prepareData(data, languageData, typeChart) {
         const tanks = {
-            type: 'line',
+            type: typeChart,
             label: languageData.tanks,
             data: data.tanks,
             borderColor: '#003f5c',
@@ -157,7 +160,7 @@
         }
 
         const bbms = {
-            type: 'line',
+            type: typeChart,
             label: languageData.bbms,
             data: data.bbms,
             borderColor: '#ffa600',
@@ -165,7 +168,7 @@
         }
 
         const autos = {
-            type: 'line',
+            type: typeChart,
             label: languageData.autosAndTankers,
             data: data.autosAndTankers,
             borderColor: '#bc5090',
@@ -173,7 +176,7 @@
         }
 
         const airplanes = {
-            type: 'line',
+            type: typeChart,
             label: languageData.airplanes,
             data: data.airplanes,
             borderColor: '#aecdc2',
@@ -181,7 +184,7 @@
         }
 
         const helicopters = {
-            type: 'line',
+            type: typeChart,
             label: languageData.helicopters,
             data: data.helicopters,
             borderColor: '#f0b8b8',
@@ -189,7 +192,7 @@
         }
 
         const bpla = {
-            type: 'line',
+            type: typeChart,
             label: languageData.bpla,
             data: data.bpla,
             borderColor: '#ada600',
@@ -197,7 +200,7 @@
         }
 
         const cruiseMissiles = {
-            type: 'line',
+            type: typeChart,
             label: languageData.cruiseMissiles,
             data: data.cruiseMissiles,
             borderColor: '#003f5c',
@@ -205,7 +208,7 @@
         }
 
         const ppos = {
-            type: 'line',
+            type: typeChart,
             label: languageData.ppos,
             data: data.ppos,
             borderColor: '#ea5545',
@@ -213,7 +216,7 @@
         }
 
         const gradAndBucks = {
-            type: 'line',
+            type: typeChart,
             label: languageData.gradAndBucks,
             data: data.gradAndBucks,
             borderColor: '#f46a9b',
@@ -221,7 +224,7 @@
         }
 
         const artillery = {
-            type: 'line',
+            type: typeChart,
             label: languageData.artillery,
             data: data.artillery,
             borderColor: '#aecdc2',
@@ -229,7 +232,7 @@
         }
 
         const boats = {
-            type: 'line',
+            type: typeChart,
             label: languageData.boats,
             data: data.boats,
             borderColor: '#0ea4D4',
@@ -237,7 +240,7 @@
         }
 
         const special = {
-            type: 'line',
+            type: typeChart,
             label: languageData.special,
             data: data.special,
             borderColor: '#1AF9DF',
@@ -245,25 +248,53 @@
         }
 
         const personal = {
-            type: 'line',
+            type: typeChart,
             label: languageData.personal,
             data: data.personal,
             borderColor: '#ef9b20',
             backgroundColor: '#ef9b20'
         }
 
-        const earthLosses = [tanks, bbms, autos, artillery];
-        const skyLosses = [airplanes, helicopters, bpla, cruiseMissiles];
-        const earthOtherLosses = [ppos, gradAndBucks, boats, special];
-        const personalLosses = [personal];
 
+        return {
+            tanks, bbms, autos, airplanes, helicopters, bpla, cruiseMissiles,
+            gradAndBucks, personal, artillery, ppos, boats, special
+        }
+    }
+
+    function renderCharts(languageData) {
+        const lineChartData = prepareData(getData(), languageData, 'line');
+        const barChartData = prepareData(getDataForDays(), languageData, 'bar');
+
+        // Line charts
+        const earthLosses = [lineChartData.tanks, lineChartData.bbms, lineChartData.autos, lineChartData.artillery];
+        const skyLosses = [lineChartData.airplanes, lineChartData.helicopters, lineChartData.bpla, lineChartData.cruiseMissiles];
+        const earthOtherLosses = [lineChartData.ppos, lineChartData.gradAndBucks, lineChartData.boats, lineChartData.special];
+        const personalLosses = [lineChartData.personal];
+
+        // Bar charts
 
         charts.push(
-            renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth),
-            renderChart('chartMordorLossesSky', skyLosses, languageData.title.sky),
-            renderChart('chartMordorLossesEarthOther', earthOtherLosses, languageData.title.earthOther),
-            renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal),
-        )
+            renderChart('chartMordorLossesTanksBar', [barChartData.tanks], languageData.title.earth, false),
+            renderChart('chartMordorLossesBbmsBar', [barChartData.bbms], languageData.title.earth, false),
+            renderChart('chartMordorLossesAutosBar', [barChartData.autos], languageData.title.earth, false),
+            renderChart('chartMordorLossesArtilleryBar', [barChartData.artillery], languageData.title.earth, false),
+            renderChart('chartMordorLossesPposBar', [barChartData.ppos], languageData.title.earth, false),
+            renderChart('chartMordorLossesAirplanesBar', [barChartData.airplanes], languageData.title.sky, false),
+            renderChart('chartMordorLossesHelicoptersBar', [barChartData.helicopters], languageData.title.sky, false),
+            renderChart('chartMordorLossesBplaBar', [barChartData.bpla], languageData.title.sky, false),
+            renderChart('chartMordorLossesCruiseMissilesBar', [barChartData.cruiseMissiles], languageData.title.sky, false),
+            renderChart('chartMordorLossesGradAndBucksBar', [barChartData.gradAndBucks], languageData.title.earth, false),
+            renderChart('chartMordorLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
+            renderChart('chartMordorLossesPersonalBar', [barChartData.personal], languageData.title.personal, false),
+        );
+
+        charts.push(
+            renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth, true),
+            renderChart('chartMordorLossesSky', skyLosses, languageData.title.sky, true),
+            renderChart('chartMordorLossesEarthOther', earthOtherLosses, languageData.title.earthOther, true),
+            renderChart('chartMordorLossesPersonal', personalLosses, languageData.title.personal, true),
+        );
     }
 
     function toggleFullScreenMode(element) {
