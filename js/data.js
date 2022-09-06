@@ -166,6 +166,6 @@ function getDataForDays(){
             }
         })
     });
-    console.log(dataNew.tanks);
+
     return dataNew;
 }
