@@ -274,20 +274,23 @@
 
         // Bar charts
 
-        charts.push(
-            renderChart('chartMordorLossesTanksBar', [barChartData.tanks], languageData.title.earth, false),
-            renderChart('chartMordorLossesBbmsBar', [barChartData.bbms], languageData.title.earth, false),
-            renderChart('chartMordorLossesAutosBar', [barChartData.autos], languageData.title.earth, false),
-            renderChart('chartMordorLossesArtilleryBar', [barChartData.artillery], languageData.title.earth, false),
-            renderChart('chartMordorLossesPposBar', [barChartData.ppos], languageData.title.earth, false),
-            renderChart('chartMordorLossesAirplanesBar', [barChartData.airplanes], languageData.title.sky, false),
-            renderChart('chartMordorLossesHelicoptersBar', [barChartData.helicopters], languageData.title.sky, false),
-            renderChart('chartMordorLossesBplaBar', [barChartData.bpla], languageData.title.sky, false),
-            renderChart('chartMordorLossesCruiseMissilesBar', [barChartData.cruiseMissiles], languageData.title.sky, false),
-            renderChart('chartMordorLossesGradAndBucksBar', [barChartData.gradAndBucks], languageData.title.earth, false),
-            renderChart('chartMordorLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
-            renderChart('chartMordorLossesPersonalBar', [barChartData.personal], languageData.title.personal, false),
-        );
+        if (document.getElementById('chartMordorLossesTanksBar')) {
+            charts.push(
+                renderChart('chartMordorLossesTanksBar', [barChartData.tanks], languageData.title.earth, false),
+                renderChart('chartMordorLossesBbmsBar', [barChartData.bbms], languageData.title.earth, false),
+                renderChart('chartMordorLossesAutosBar', [barChartData.autos], languageData.title.earth, false),
+                renderChart('chartMordorLossesArtilleryBar', [barChartData.artillery], languageData.title.earth, false),
+                renderChart('chartMordorLossesPposBar', [barChartData.ppos], languageData.title.earth, false),
+                renderChart('chartMordorLossesAirplanesBar', [barChartData.airplanes], languageData.title.sky, false),
+                renderChart('chartMordorLossesHelicoptersBar', [barChartData.helicopters], languageData.title.sky, false),
+                renderChart('chartMordorLossesBplaBar', [barChartData.bpla], languageData.title.sky, false),
+                renderChart('chartMordorLossesCruiseMissilesBar', [barChartData.cruiseMissiles], languageData.title.sky, false),
+                renderChart('chartMordorLossesGradAndBucksBar', [barChartData.gradAndBucks], languageData.title.earth, false),
+                renderChart('chartMordorLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
+                renderChart('chartMordorLossesPersonalBar', [barChartData.personal], languageData.title.personal, false),
+            );
+        }
+
 
         charts.push(
             renderChart('chartMordorLossesEarth', earthLosses, languageData.title.earth, true),
