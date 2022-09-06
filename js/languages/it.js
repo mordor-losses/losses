@@ -26,6 +26,7 @@ window.languageData = {
         'suggestions': 'Per note o reclami scrivere a',
         'official_data': 'Dati sul personale sono approssimativi, presi dalla pagina ufficiale dello',
         'title': "Resoconto perdite russe in Ucraina",
-        'zsu_url': "Stato maggiore delle Forze armate dell'Ucraina"
+        'zsu_url': "Stato maggiore delle Forze armate dell'Ucraina",
+        'datepicker': 'Filtra per data'
     }
 }

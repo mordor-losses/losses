@@ -26,6 +26,7 @@ window.languageData = {
         'suggestions': 'Lassen Sie uns wissen, wenn Sie Verbesserungsvorschläge haben ',
         'official_data': 'Die Daten zu den Verlusten des Militärpersonals sind ungefähre Angaben, die Informationen wurden entnommen',
         'title': 'Verluste der Invasoren in der Ukraine',
-        'zsu_url': 'Generalstab der Streitkräfte der Ukraine'
+        'zsu_url': 'Generalstab der Streitkräfte der Ukraine',
+        'datepicker': 'Nach Datum filtern'
     }
 }

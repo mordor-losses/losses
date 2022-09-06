@@ -26,6 +26,7 @@ window.languageData = {
         'suggestions': 'Let us know if you have any suggestions for improvement ',
         'official_data': 'The military staff losses data is approximate, information was taken from ',
         'title': 'Losses of the invaders in Ukraine',
-        'zsu_url': 'General Staff of the Armed Forces of Ukraine'
+        'zsu_url': 'General Staff of the Armed Forces of Ukraine',
+        'datepicker': 'Filter by date'
     }
 }
