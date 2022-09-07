@@ -1,6 +1,6 @@
 (function() {
     const START_OF_WAR = '2022-02-24';
-    const END_OF_WAR = "2022-09-06";
+    const END_OF_WAR = "2022-09-07";
     let charts = [];
     let currentIconElement = null;
     let fullScreen = false;
@@ -286,7 +286,7 @@
                 renderChart('chartMordorLossesBplaBar', [barChartData.bpla], languageData.title.sky, false),
                 renderChart('chartMordorLossesCruiseMissilesBar', [barChartData.cruiseMissiles], languageData.title.sky, false),
                 renderChart('chartMordorLossesGradAndBucksBar', [barChartData.gradAndBucks], languageData.title.earth, false),
-                renderChart('chartMordorLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
+                renderChart('chartMordo rLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
                 renderChart('chartMordorLossesPersonalBar', [barChartData.personal], languageData.title.personal, false),
             );
         }
