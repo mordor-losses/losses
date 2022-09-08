@@ -286,7 +286,7 @@
                 renderChart('chartMordorLossesBplaBar', [barChartData.bpla], languageData.title.sky, false),
                 renderChart('chartMordorLossesCruiseMissilesBar', [barChartData.cruiseMissiles], languageData.title.sky, false),
                 renderChart('chartMordorLossesGradAndBucksBar', [barChartData.gradAndBucks], languageData.title.earth, false),
-                renderChart('chartMordo rLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
+                renderChart('chartMordorLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
                 renderChart('chartMordorLossesPersonalBar', [barChartData.personal], languageData.title.personal, false),
             );
         }
