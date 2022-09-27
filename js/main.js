@@ -1,6 +1,6 @@
 (function() {
     const START_OF_WAR = '2022-02-24';
-    const END_OF_WAR = "2022-09-26";
+    const END_OF_WAR = "2022-09-27";
     let charts = [];
     let currentIconElement = null;
     let fullScreen = false;
@@ -81,25 +81,6 @@
 
         const labels = [];
         while (currentDate.getTime() <= endDate.getTime()) {
-            labels.push(currentDate.getDate() + '.' + formatMonth(currentDate.getMonth()));
-            currentDate = new Date(currentDate.getTime() + 86400000)
-        }
-
-        return labels;
-    }
-
-    /** @deprecated **/
-    function getOldDateLabels(countDays) {
-        const formatMonth = function (month) {
-            const formattedMonth = month + 1;
-
-            return formattedMonth >= 10 ? formattedMonth : '0' + formattedMonth
-        }
-
-        let currentDate = new Date('2022-02-24');
-        const labels = [];
-
-        for (let i = 0; i < countDays; i++) {
             labels.push(currentDate.getDate() + '.' + formatMonth(currentDate.getMonth()));
             currentDate = new Date(currentDate.getTime() + 86400000)
         }
