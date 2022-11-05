@@ -1,6 +1,6 @@
 (function() {
     const START_OF_WAR = '2022-02-24';
-    const END_OF_WAR = "2022-11-04";
+    const END_OF_WAR = "2022-11-05";
     let charts = [];
     let currentIconElement = null;
     let fullScreen = false;
