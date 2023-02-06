@@ -1,6 +1,6 @@
 (function() {
     const START_OF_WAR = '2022-02-24';
-    const END_OF_WAR = "2023-02-05";
+    const END_OF_WAR = "2023-02-06";
     let charts = [];
     let currentIconElement = null;
     let fullScreen = false;
@@ -295,7 +295,7 @@
         })
 
         document.addEventListener('keydown', function(e) {
-            if (e.key == 'Escape' && fullScreen) {
+            if (e.key === 'Escape' && fullScreen) {
                 toggleFullScreenMode(currentIconElement);
 
                 currentIconElement = null;
