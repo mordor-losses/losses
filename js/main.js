@@ -250,7 +250,7 @@
         // Line charts
         const earthLosses = [lineChartData.tanks, lineChartData.bbms, lineChartData.autos, lineChartData.artillery];
         const skyLosses = [lineChartData.airplanes, lineChartData.helicopters, lineChartData.bpla, lineChartData.cruiseMissiles];
-        const earthOtherLosses = [lineChartData.ppos, lineChartData.gradAndBucks, lineChartData.boats, lineChartData.special];
+        const earthOtherLosses = [lineChartData.ppos, lineChartData.gradAndBucks, lineChartData.special];
         const personalLosses = [lineChartData.personal];
 
         // Bar charts
