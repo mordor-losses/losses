@@ -13,7 +13,7 @@ window.languageData = {
         'helicopters': 'Helicopters',
         'ppos': 'AAW (air defense)',
         'bpla': 'Unmanned aerial vehicle (drone)',
-        'gradAndBucks': 'Multiple launch rocket system',
+        'mlrs': 'Multiple launch rocket system',
         'artillery': 'Artillery',
         'boats': 'Ships (boats)',
         'personal': 'Soldiers/army staff',

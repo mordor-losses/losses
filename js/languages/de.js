@@ -13,7 +13,7 @@ window.languageData = {
         'helicopters': 'Helikopter',
         'ppos': 'Luftverteidigung',
         'bpla': 'Unbemanntes Luftfahrzeug (Drohne)',
-        'gradAndBucks': 'Mehrfachstartraketensystem',
+        'mlrs': 'Mehrfachstartraketensystem',
         'artillery': 'Artillerie',
         'boats': 'Schiffe (Boote)',
         'personal': 'Soldaten/Armeepersonal',

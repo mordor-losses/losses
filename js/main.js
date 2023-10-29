@@ -196,10 +196,10 @@
             backgroundColor: '#ea5545'
         }
 
-        const gradAndBucks = {
+        const mlrs = {
             type: typeChart,
-            label: languageData.gradAndBucks,
-            data: data.gradAndBucks,
+            label: languageData.mlrs,
+            data: data.mlrs,
             borderColor: '#f46a9b',
             backgroundColor: '#f46a9b'
         }
@@ -239,7 +239,7 @@
 
         return {
             tanks, bbms, autos, airplanes, helicopters, bpla, cruiseMissiles,
-            gradAndBucks, personal, artillery, ppos, boats, special
+            mlrs, personal, artillery, ppos, boats, special
         }
     }
 
@@ -250,7 +250,7 @@
         // Line charts
         const earthLosses = [lineChartData.tanks, lineChartData.bbms, lineChartData.autos, lineChartData.artillery];
         const skyLosses = [lineChartData.airplanes, lineChartData.helicopters, lineChartData.bpla, lineChartData.cruiseMissiles];
-        const earthOtherLosses = [lineChartData.ppos, lineChartData.gradAndBucks, lineChartData.special];
+        const earthOtherLosses = [lineChartData.ppos, lineChartData.mlrs, lineChartData.special];
         const personalLosses = [lineChartData.personal];
 
         // Bar charts
@@ -265,7 +265,7 @@
             renderChart('chartMordorLossesHelicoptersBar', [barChartData.helicopters], languageData.title.sky, false),
             renderChart('chartMordorLossesBplaBar', [barChartData.bpla], languageData.title.sky, false),
             renderChart('chartMordorLossesCruiseMissilesBar', [barChartData.cruiseMissiles], languageData.title.sky, false),
-            renderChart('chartMordorLossesGradAndBucksBar', [barChartData.gradAndBucks], languageData.title.earth, false),
+            renderChart('chartMordorLossesMLRSBar', [barChartData.mlrs], languageData.title.earth, false),
             renderChart('chartMordorLossesSpecialBar', [barChartData.special], languageData.title.earth, false),
             renderChart('chartMordorLossesPersonalBar', [barChartData.personal], languageData.title.personal, false),
         );

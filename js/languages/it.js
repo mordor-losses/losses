@@ -13,7 +13,7 @@ window.languageData = {
         'helicopters': 'Elicotteri',
         'ppos': 'Mezzi contraerei',
         'bpla': 'APR',
-        'gradAndBucks': 'Lanciarazzi multiplo',
+        'mlrs': 'Lanciarazzi multiplo',
         'artillery': 'Artiglieria',
         'boats': 'Imbarcazioni e navi',
         'personal': "Personale dell'esercito",
