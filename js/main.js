@@ -7,7 +7,7 @@
     function init() {
         renderCharts(window.languageData.charts);
         renderFullScreenIcons();
-        addEvents();н
+        addEvents();
         initDatePicker();
     }
 
